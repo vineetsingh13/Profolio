@@ -1,73 +1,100 @@
 {
   "Color": "#ff5733",
   "Head": {
-    "title": "Jhon Doe | Frontend Developer & Designer",
-    "NavbarName": "Jhon Doe"
+    "title": "Vineet Singh | Android Developer & ML Enthusiast",
+    "NavbarName": "Vineet Singh"
   },
   "HomePage": {
-    "name": "Jhon Doe",
+    "name": "Vineet Singh",
     "Position": [
-      "Position 1",
-      "Position 2",
-      "Position 3",
-      "Position 4"
+      "Android Developer",
+      "Machine Learning Enthusiast",
+      "Innovative App Creator",
+      "Open Source Contributor"
     ],
-    "description": "I design and build websites that look good, and work well."
+    "description": "I design and build innovative Android applications with a focus on user experience and performance."
   },
   "AboutPage": {
-    "AboutParagraph": "I am a frontend developer and designer with a passion for creating beautiful and user-friendly websites and applications. I have a strong background in both web development and graphic design, and I enjoy using my skills to create stunning websites and interfaces that are easy to use and navigate.In my previous work, I have designed and developed websites for a variety of clients, including small businesses, non-profit organizations, and large corporations. I have also created mobile applications and responsive websites that are compatible with a variety of devices and screen sizes. My goal is always to create websites and applications that are visually appealing and user-friendly, and I believe that my skills and experience make me an excellent frontend developer and designer.",
+    "AboutParagraph": "I am an Android developer and machine learning enthusiast with a passion for creating innovative and user-friendly applications. I have a strong background in both native and cross-platform mobile development, and I enjoy using my skills to create powerful and scalable apps. In my previous work, I have designed and developed applications for a variety of clients, including small businesses and large corporations. My goal is always to create applications that are visually appealing and perform seamlessly, leveraging the latest technologies and best practices.",
     "ImageLink": "https://cdn.vectorstock.com/i/1000x1000/23/81/default-avatar-profile-icon-vector-18942381.webp"
   },
   "Skills": [
-    "Lighting Techniques",
-    "Final Cut Pro",
-    "Persuasion Techniques",
-    "Agile Methodology",
-    "Adobe Creative Suite"
+    "Kotlin",
+    "Python",
+    "Dart",
+    "SQL",
+    "Machine Learning",
+    "Neural Networks",
+    "SciKit Learn",
+    "Keras",
+    "Android Studio",
+    "Flutter",
+    "Django",
+    "MYSQL",
+    "SQLite",
+    "POSTMAN",
+    "FIGMA",
+    "REST APIs",
+    "Retrofit",
+    "Room Db"
   ],
   "Projects": [
     {
-      "title": "Project Title1",
+      "title": "OCR App",
       "ImageLink": "",
       "Status": "Completed",
-      "ProjectName": "Project Title1",
+      "ProjectName": "OCR App",
       "Technologies": [
-        "ReactJS",
-        "Creative Writing"
+        "Kotlin",
+        "AWS Textract",
+        "OpenAI API",
+        "Firebase Authentication"
       ],
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ",
-      "DemoLink": "/"
+      "Description": "Developed a Native mobile OCR app using Kotlin for text extraction from images and integrated AWS Textract for real-time image text extraction. Enabled seamless AI-powered conversation using Coroutines via OpenAI API and personalized chat responses based on user interaction history. Ensured secure user access with Firebase authentication enhancing user experience and data privacy.",
+      "DemoLink": "https://github.com/vineetsingh13/OCR"
     },
     {
-      "title": "Project Title2",
-      "ImageLink": "",
-      "Status": "Working On it",
-      "ProjectName": "Project Title2",
-      "Technologies": [
-        "Lighting Techniques",
-        "ReactJS",
-        "Creative Writing"
-      ],
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ",
-      "DemoLink": ""
-    },
-    {
-      "title": "Project Title3",
+      "title": "DocScan Sentry",
       "ImageLink": "",
       "Status": "Completed",
-      "ProjectName": "Project Title3",
+      "ProjectName": "DocScan Sentry",
       "Technologies": [
-        "ReactJS",
-        "Creative Writing"
+        "Google ML Kit",
+        "RoomDb"
       ],
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ",
-      "DemoLink": ""
+      "Description": "Scans and creates documents using the Google ML Kit library. Stores documents in RoomDB and offers functionalities to share, download, and search for documents enhancing user productivity.",
+      "DemoLink": "https://play.google.com/store/apps/details?id=com.vineet.docscanner"
+    },
+    {
+      "title": "Runner App",
+      "ImageLink": "",
+      "Status": "Completed",
+      "ProjectName": "Runner App",
+      "Technologies": [
+        "Kotlin",
+        "Google Maps SDK",
+        "Dagger Hilt"
+      ],
+      "Description": "Developed an Android application using Kotlin and Android Studio for tracking running, cycling, and walking activities. Implemented Clean MVVM architecture leveraging Dagger Hilt for dependency injection and Coroutines for asynchronous operations. Integrated Google Maps SDK and created graphical features to offer users insightful data visualization of their latest runs.",
+      "DemoLink": "https://github.com/vineetsingh13/Runner"
+    },
+    {
+      "title": "Tattooz",
+      "ImageLink": "",
+      "Status": "Completed",
+      "ProjectName": "Tattooz",
+      "Technologies": [
+        "Kotlin"
+      ],
+      "Description": "Developed an Android application enabling unique tattoo design generation based on various inputs and styles. Integrated customization options allowing users to modify designs with different elements, sizes, and styles.",
+      "DemoLink": "https://github.com/vineetsingh13/tattooz"
     }
   ],
-   "Contact": {
-    "Email": "johndoe@gmail.com",
-    "Github": "https://github.com/johndoe",
-    "Twitter": "https://twitter.com/johndoe",
-    "LinkedIn": "https://linkedin.com/johndoe"
+  "Contact": {
+    "Email": "singhvineet13502@gmail.com",
+    "Github": "https://github.com/vineetsingh13",
+    "Twitter": "",
+    "LinkedIn": "https://www.linkedin.com/in/vineet-singh-139533250"
   }
 }
+
