@@ -1,4 +1,4 @@
-// import data from "../data.json";
+import data from "../data.json";
 // const data=JSON.stringify(data.json);
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
@@ -55,112 +55,112 @@ export default function Home({ publications, username }) {
   const [isMobile, setIsMobile] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
-  const [dataFetched, setDataFetched] = useState(false);
+  const [dataFetched, setDataFetched] = useState(true);
   const [userId, setUserId] = useState(null);
-  const [data, setData] = useState({
-    Color: '#ff5733',
-    Head: {
-      title: 'Jhon Doe | Frontend Developer & Designer',
-      NavbarName: 'Jhon Doe',
-    },
-    HomePage: {
-      name: 'Jhon Doe',
-      Position: ['Position 1', 'Position 2', 'Position 3', 'Position 4'],
-      description: 'I design and build websites that look good, and work well.',
-    },
-    AboutPage: {
-      AboutParagraph:
-        'I am a frontend developer and designer with a passion for creating beautiful and user-friendly websites and applications. I have a strong background in both web development and graphic design, and I enjoy using my skills to create stunning websites and interfaces that are easy to use and navigate.In my previous work, I have designed and developed websites for a variety of clients, including small businesses, non-profit organizations, and large corporations. I have also created mobile applications and responsive websites that are compatible with a variety of devices and screen sizes. My goal is always to create websites and applications that are visually appealing and user-friendly, and I believe that my skills and experience make me an excellent frontend developer and designer.',
-      ImageLink:
-        'https://cdn.vectorstock.com/i/1000x1000/23/81/default-avatar-profile-icon-vector-18942381.webp',
-    },
-    Skills: [
-      'Lighting Techniques',
-      'Final Cut Pro',
-      'Persuasion Techniques',
-      'Agile Methodology',
-      'Adobe Creative Suite',
-    ],
-    Projects: [
-      {
-        title: 'Project Title1',
-        ImageLink: '',
-        Status: 'Completed',
-        ProjectName: 'Project Title1',
-        Technologies: ['ReactJS', 'Creative Writing'],
-        Description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ',
-        DemoLink: '/',
-      },
-      {
-        title: 'Project Title2',
-        ImageLink: '',
-        Status: 'Working On it',
-        ProjectName: 'Project Title2',
-        Technologies: ['Lighting Techniques', 'ReactJS', 'Creative Writing'],
-        Description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ',
-        DemoLink: '',
-      },
-      {
-        title: 'Project Title3',
-        ImageLink: '',
-        Status: 'Completed',
-        ProjectName: 'Project Title3',
-        Technologies: ['ReactJS', 'Creative Writing'],
-        Description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ',
-        DemoLink: '',
-      },
-    ],
-    Contact: {
-      Email: 'johndoe@gmail.com',
-      Github: 'https://github.com/johndoe',
-      Twitter: 'https://twitter.com/johndoe',
-      LinkedIn: 'https://linkedin.com/johndoe',
-    },
-  });
+  // const [data, setData] = useState({
+  //   Color: '#ff5733',
+  //   Head: {
+  //     title: 'Jhon Doe | Frontend Developer & Designer',
+  //     NavbarName: 'Jhon Doe',
+  //   },
+  //   HomePage: {
+  //     name: 'Jhon Doe',
+  //     Position: ['Position 1', 'Position 2', 'Position 3', 'Position 4'],
+  //     description: 'I design and build websites that look good, and work well.',
+  //   },
+  //   AboutPage: {
+  //     AboutParagraph:
+  //       'I am a frontend developer and designer with a passion for creating beautiful and user-friendly websites and applications. I have a strong background in both web development and graphic design, and I enjoy using my skills to create stunning websites and interfaces that are easy to use and navigate.In my previous work, I have designed and developed websites for a variety of clients, including small businesses, non-profit organizations, and large corporations. I have also created mobile applications and responsive websites that are compatible with a variety of devices and screen sizes. My goal is always to create websites and applications that are visually appealing and user-friendly, and I believe that my skills and experience make me an excellent frontend developer and designer.',
+  //     ImageLink:
+  //       'https://cdn.vectorstock.com/i/1000x1000/23/81/default-avatar-profile-icon-vector-18942381.webp',
+  //   },
+  //   Skills: [
+  //     'Lighting Techniques',
+  //     'Final Cut Pro',
+  //     'Persuasion Techniques',
+  //     'Agile Methodology',
+  //     'Adobe Creative Suite',
+  //   ],
+  //   Projects: [
+  //     {
+  //       title: 'Project Title1',
+  //       ImageLink: '',
+  //       Status: 'Completed',
+  //       ProjectName: 'Project Title1',
+  //       Technologies: ['ReactJS', 'Creative Writing'],
+  //       Description:
+  //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ',
+  //       DemoLink: '/',
+  //     },
+  //     {
+  //       title: 'Project Title2',
+  //       ImageLink: '',
+  //       Status: 'Working On it',
+  //       ProjectName: 'Project Title2',
+  //       Technologies: ['Lighting Techniques', 'ReactJS', 'Creative Writing'],
+  //       Description:
+  //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ',
+  //       DemoLink: '',
+  //     },
+  //     {
+  //       title: 'Project Title3',
+  //       ImageLink: '',
+  //       Status: 'Completed',
+  //       ProjectName: 'Project Title3',
+  //       Technologies: ['ReactJS', 'Creative Writing'],
+  //       Description:
+  //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae eum, perspiciatis amet corrupti at? Voluptates ipsum, doloribus in repudiandae nemo a? Unde accusamus pariatur repudiandae similique. Quod, veniam aliquid! Project Description 1 ',
+  //       DemoLink: '',
+  //     },
+  //   ],
+  //   Contact: {
+  //     Email: 'johndoe@gmail.com',
+  //     Github: 'https://github.com/johndoe',
+  //     Twitter: 'https://twitter.com/johndoe',
+  //     LinkedIn: 'https://linkedin.com/johndoe',
+  //   },
+  // });
   let Color = `${data.Color}`;
   let BColor = `${data.Color}`;
 
-  useEffect(() => {
-    const fetchUserId = async () => {
-      try {
-        const response = await axios.get(`${url}/auth/getuserid/${username}`);
-        if (response.data) {
-          setUserId(response.data); // Set the user ID in state
-        } else {
-          console.error('User not found');
-        }
-      } catch (error) {
-        console.error('Error fetching user ID:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchUserId = async () => {
+  //     try {
+  //       const response = await axios.get(`${url}/auth/getuserid/${username}`);
+  //       if (response.data) {
+  //         setUserId(response.data); // Set the user ID in state
+  //       } else {
+  //         console.error('User not found');
+  //       }
+  //     } catch (error) {
+  //       console.error('Error fetching user ID:', error);
+  //     }
+  //   };
 
-    if (username) {
-      fetchUserId();
-    }
-  }, [url, username]);
+  //   if (username) {
+  //     fetchUserId();
+  //   }
+  // }, [url, username]);
 
-  useEffect(() => {
-    if (userId) {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get(`${url}/userdata/getalljson/${userId}`);
-          if (response.data && response.data.length > 0) {
-            setData(response.data[response.data.length - 1]);
-          } else {
-            console.error('API returned empty array');
-          }
-        } catch (error) {
-          console.error('Error fetching data:', error);
-        }
-        setDataFetched(true);
-      };
+  // useEffect(() => {
+  //   if (userId) {
+  //     const fetchData = async () => {
+  //       try {
+  //         const response = await axios.get(`${url}/userdata/getalljson/${userId}`);
+  //         if (response.data && response.data.length > 0) {
+  //           setData(response.data[response.data.length - 1]);
+  //         } else {
+  //           console.error('API returned empty array');
+  //         }
+  //       } catch (error) {
+  //         console.error('Error fetching data:', error);
+  //       }
+  //       setDataFetched(true);
+  //     };
 
-      fetchData();
-    }
-  }, [url, userId]);
+  //     fetchData();
+  //   }
+  // }, [url, userId]);
 
   const handleResize = () => {
     if (window.innerWidth < 1024) {
